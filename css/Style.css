@@ -55,6 +55,18 @@
     color: rgb(255, 142, 221);
 }
 
+.iconosRedes a {
+    text-decoration: none;
+    display: inline-block;
+    color: whitesmoke;
+    margin-left: 10px;
+    
+}
+
+.iconosRedes a :hover{
+    color: rgb(160, 183, 245);
+}
+
 .presentacion{
     color: whitesmoke;
     max-width: 1100px;
@@ -84,28 +96,27 @@
     text-align: center;
 }
 
-.button{
-    text-decoration: none;
-    display: inline-block;
-    margin: 25px;
 
-}
+
 .button button{
-    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    background-color: rgba(31, 79, 211, 0);
+    margin: 30px;
+}
+
+.button button a{
+    color: rgb(110, 144, 240);
+    text-decoration: none;
+    font-weight: 800;
+    text-align: center;
+    padding: 10px 30px;
     border-color: rgb(160, 183, 245);
     border-radius: 50px;
     border-style: solid;
 }
 
-.button button a{
-    text-decoration: none;
-    color: rgb(110, 144, 240);
-    font-weight: 500;
-    margin: 15px;
-    text-align: center;
-}
-
-.button button :hover{
-    color: whitesmoke;
-    border-color: rgb(255, 142, 221);
+.button :hover{
+    background-color: rgb(110, 144, 240);
+    color: rgb(206, 203, 203);
+    
 }
