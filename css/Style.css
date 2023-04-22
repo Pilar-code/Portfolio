@@ -32,10 +32,14 @@
     padding: 10px 20px;
 }
 
-.contenidoHeader h1{
-    text-align: center;
+.contenidoHeader h1 a{
     color: rgb(160, 183, 245);
+    text-decoration: none;
+    text-align: center;
+}
 
+.contenidoHeader h1 a:hover{
+    text-transform:uppercase;
 }
 
 .contenidoHeader nav ul{
@@ -67,7 +71,7 @@
     color: rgb(160, 183, 245);
 }
 
-.presentacion{
+#presentacion{
     color: whitesmoke;
     max-width: 1100px;
     height: 100vh;
@@ -78,18 +82,18 @@
     justify-content: center;
 }
 
-.presentacion h2{
+#presentacion h2{
     text-align: center;
     font-size: 45px;
     margin-bottom: 25px;
 }
 
-.presentacion h2 span{
+#presentacion h2 span{
     font-size: 25px;
     color: rgb(160, 183, 245);
 }
 
-.presentacion p{
+#presentacion p{
     max-width: 700px;
     margin: 25px auto;
     font-size: 18px;
@@ -190,16 +194,16 @@
     color: white;
 }
 
-/* SERVICIOS */
+/* PORTFOLIO */
 
-#servicios{
+#portfolio{
     display: flex;
     justify-content: center;
     padding: 100px;
     background-color: black;
 }
 
-#servicios .card{
+#portfolio .card{
     margin: 20px;
 }
 
@@ -216,4 +220,97 @@
 .card-body a:hover{
     background-color: rgb(160, 183, 245);
     color: white;
+}
+
+/* HABILIDADES */
+
+#habilidades{
+    background: linear-gradient(rgb(0, 0, 0), rgba(31, 29, 29, 0.884),rgba(54, 13, 92, 0.527)), url(../img/dev.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+    color: black;
+}
+
+#habilidades .habilidadesInfo{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 25%;
+}
+
+#habilidades div .barra{
+    background-color: rgba(128, 128, 128, 0.945);
+    width: 50%;
+    height: 6px;
+    margin-bottom: 10px ;
+    display: inline-block;
+}
+
+#habilidades div .barra .barraProgreso1{
+    background-color: whitesmoke;
+    width: 95%;
+    height: 6px;
+    animation: progreso1 3s forwards;
+}
+
+#habilidades div .barra .barraProgreso2{
+    background-color: whitesmoke;
+    width: 90%;
+    height: 6px;
+    animation: progreso2 3s forwards;
+}
+
+#habilidades div .barra .barraProgreso3{
+    background-color: whitesmoke;
+    width: 85%;
+    height: 6px;
+    animation: progreso3 3s forwards;
+}
+
+#habilidades div .barra .barraProgreso4{
+    background-color: whitesmoke;
+    width: 65%;
+    height: 6px;
+    animation: progreso4 3s forwards;
+}
+
+/* Animaciones de barras de habilidades */
+
+@keyframes progreso1 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+@keyframes progreso2 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes progreso3 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes progreso4 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 65%;
+    }
 }
